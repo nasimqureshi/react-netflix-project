@@ -10,7 +10,7 @@ ReactDOM.render(
         <div className="card__info">
           <span className="card__category">A Netflix original Series</span>
           <h3 className="card__title">DARK</h3>
-          <a href="" target="_blank">
+          <a href="https://www.netflix.com/in/title/80990668?source=35" target="_blank">
             <button>Watch Now</button>
           </a>
         </div>
