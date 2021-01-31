@@ -7,9 +7,9 @@ function Card(props){
   <div className="card">
     <img src={props.imgsrc} alt="myPic" className="card_img" />
     <div className="card__info">
-      <span className="card__category">A Netflix original Series</span>
-      <h3 className="card__title">DARK</h3>
-      <a href="" target="_blank">
+      <span className="card__category">{props.title}</span>
+      <h3 className="card__title">{props.sname}</h3>
+      <a href={props.link} target="_blank">
         <button>Watch Now</button>
       </a>
     </div>
@@ -28,8 +28,16 @@ title="A Netflix Original Series"
  sname='DARK' 
 link="https://www.netflix.com/in/title/80990668?source=35"
  />
-<Card />
-<Card />
+
+<Card  imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+title="A Netflix Original Series"
+ sname='Extra Curriclar' 
+link="https://www.netflix.com/in/title/80990668?source=35"/>
+
+<Card  imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+title="A Netflix Original Series"
+ sname='Stranger Things' 
+link="https://www.netflix.com/in/title/80990668?source=35"/>
  </>,
   document.getElementById('root')
 );
